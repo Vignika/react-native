@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
+import DirectionLayout from "../components/directionLayout";
 
 const styles = StyleSheet.create({
   container: {
@@ -16,7 +17,6 @@ const styles = StyleSheet.create({
 
 export default function Index() {
   return (
-    <>
     <View
       style={{
         flex: 1,
@@ -24,27 +24,21 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text style={styles.bigBlue}>
-        Edit app/index.tsx to edit this screen.
-      </Text>
-    </View>
-    <View style={{ flex: 1, height: "15%", backgroundColor: "powderblue" }} />
-    <View
-      style={{
-        flex: 2,
-        width: "66%",
-        height: "35%",
-        backgroundColor: "skyblue",
-      }}
-    />
-    <View
-      style={{
-        flex: 3,
-        width: "33%",
-        height: "50%",
-        backgroundColor: "steelblue",
-      }}
-    />
-     </>
-  );
+     <DirectionLayout />
+
+<Text style={styles.bigBlue}>
+  Edit app/index.tsx to edit this screen.
+</Text>
+<View
+  style={{
+    width: 50,
+    height: 50,
+    backgroundColor: "powderblue",
+  }}
+/>
+</View>
+);
+
 }
+
+
