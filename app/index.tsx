@@ -24,11 +24,27 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text style={styles.bigBlue}>Edit app/index.tsx to edit this screen.</Text>
+      <Text style={styles.bigBlue}>
+        Edit app/index.tsx to edit this screen.
+      </Text>
     </View>
-     <View style={{flex: 1, backgroundColor: 'powderblue'}} />
-     <View style={{flex: 2, backgroundColor: 'skyblue'}} />
-     <View style={{flex: 3, backgroundColor: 'steelblue'}} />
+    <View style={{ flex: 1, height: "15%", backgroundColor: "powderblue" }} />
+    <View
+      style={{
+        flex: 2,
+        width: "66%",
+        height: "35%",
+        backgroundColor: "skyblue",
+      }}
+    />
+    <View
+      style={{
+        flex: 3,
+        width: "33%",
+        height: "50%",
+        backgroundColor: "steelblue",
+      }}
+    />
      </>
   );
 }
